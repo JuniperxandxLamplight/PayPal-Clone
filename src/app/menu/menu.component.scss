@@ -6,8 +6,8 @@ nav{
   color: white;
   border-bottom: 1px solid rgba(255,255,255,0.5);
   img{
-    height: 50%;
-    width: 25%;
+    height: 45%;
+    width: 28%;
   }
   div{
     display: flex;
@@ -15,11 +15,14 @@ nav{
     align-items: center;
     width: 33%;
   }
+  div:nth-of-type(2){
+    font-weight: bold;
+  }
   div:last-of-type{
     justify-content: center;
     p{
-      border: 2px solid white;
-      padding: 12px 15px;
+      border: 1.1px solid white;
+      padding: 12px 25px;
       border-radius: 100px;
     }
     p:last-of-type{

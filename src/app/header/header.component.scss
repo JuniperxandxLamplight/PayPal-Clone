@@ -19,7 +19,7 @@ $hover-blue: #005ea6;
   }
   p{
     width: 30%;
-    padding: .85rem 2rem;
+    padding: 1.3rem 2rem;
     margin: 10px auto;
     text-align: center;
     font-weight: bold;
@@ -35,6 +35,6 @@ $hover-blue: #005ea6;
     background-color: $hover-blue;
   }
   p:nth-of-type(2){
-    border: 2px solid white;
+    border: 1.1px solid white;
   }
 }
