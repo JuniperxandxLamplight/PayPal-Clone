@@ -2,12 +2,30 @@ nav{
   display: flex;
   justify-content: space-between;
   height: 75px;
+  background-image: linear-gradient(rgba(0,0,0,.45), transparent);
   color: white;
+  border-bottom: 1px solid rgba(255,255,255,0.5);
   img{
     height: 50%;
-    width: auto;
+    width: 25%;
   }
   div{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 33%;
+  }
+  div:last-of-type{
+    justify-content: center;
+    p{
+      border: 2px solid white;
+      padding: 12px 15px;
+      border-radius: 100px;
+    }
+    p:last-of-type{
+      margin-left: 10px;
+      background-color: white;
+      color: #2c2e2f;
+    }
   }
 }
