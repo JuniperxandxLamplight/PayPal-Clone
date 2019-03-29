@@ -1,0 +1,13 @@
+nav{
+  display: flex;
+  justify-content: space-between;
+  height: 75px;
+  color: white;
+  img{
+    height: 50%;
+    width: auto;
+  }
+  div{
+    display: flex;
+  }
+}
