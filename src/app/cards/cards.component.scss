@@ -3,7 +3,7 @@ section{
   justify-content: space-around;
   margin: 50px 12%;
 }
-div{
+.card{
   height: 230px;
   width: 23%;
   background-color: white;
@@ -12,5 +12,33 @@ div{
   color: gray;
   h6{
     margin: 18px 0 35px 0;
+  }
+}
+.card:hover{
+  animation-name: flip;
+  animation-duration: .6s;
+}
+.flip-card{
+  position: relative;
+  top: -87%;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+}
+.flip-card:hover{
+  background: radial-gradient(circle at bottom, #0c8dc4, darkblue);
+}
+
+@keyframes flip{
+  0%{
+    transform: rotateY(0deg);
+  }
+  50%{
+    transform: rotateY(90deg);
+    background: radial-gradient(circle at bottom, #0c8dc4, darkblue);
+  }
+  100%{
+    transform: rotateY(180deg);
+    background: radial-gradient(circle at bottom, #0c8dc4, darkblue);
   }
 }
