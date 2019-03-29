@@ -1,13 +1,39 @@
+$main-blue: #0070ba;
+$hover-blue: #005ea6;
+
 .header{
-  background-image: url('../../assets/images/header.jpg');
+  height: 100%;
+  width: 75%;
+  margin: 100px auto;
+  text-align: center;
   color: white;
   h1{
     font-size: 4rem;
+    width: 90%;
+    padding: 20px;
   }
   h4{
     font-size: 1.7rem;
+    padding: 20px;
   }
-  button:first-of-type{
+  p{
+    width: 30%;
+    padding: .85rem 2rem;
+    margin: 10px auto;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 100px;
+  }
+  p:hover{
+    color: rgba(255,255,255,.85);
+  }
+  p:first-of-type{
     background-color: $main-blue;
+  }
+  p:first-of-type:hover{
+    background-color: $hover-blue;
+  }
+  p:nth-of-type(2){
+    border: 2px solid white;
   }
 }
