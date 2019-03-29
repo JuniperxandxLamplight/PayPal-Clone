@@ -1,0 +1,16 @@
+section{
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 12%;
+}
+div{
+  height: 230px;
+  width: 23%;
+  background-color: white;
+  text-align: center;
+  font-size: 1.4rem;
+  color: gray;
+  h6{
+    margin: 18px 0 35px 0;
+  }
+}
