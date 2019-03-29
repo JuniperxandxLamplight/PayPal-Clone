@@ -1,7 +1,7 @@
 nav{
   display: flex;
   justify-content: space-between;
-  height: 75px;
+  height: 72px;
   background-image: linear-gradient(rgba(0,0,0,.45), transparent);
   color: white;
   border-bottom: 1px solid rgba(255,255,255,0.5);
@@ -17,9 +17,11 @@ nav{
   }
   div:nth-of-type(2){
     font-weight: bold;
+    padding-top: 5px;
   }
   div:last-of-type{
     justify-content: center;
+    padding-top: 5px;
     p{
       border: 1.1px solid white;
       padding: 12px 25px;
