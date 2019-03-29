@@ -11,34 +11,21 @@ section{
   font-size: 1.4rem;
   color: gray;
   h6{
-    margin: 18px 0 35px 0;
+    padding: 18px 0 35px 0;
   }
 }
-.card:hover{
-  animation-name: flip;
-  animation-duration: .6s;
+.card:hover {
+  transform: rotateY(180deg);
 }
-.flip-card{
-  position: relative;
-  top: -87%;
+.card .side {
+  backface-visibility: hidden;
   height: 100%;
+  position: absolute;
+  overflow: hidden;
   width: 100%;
-  z-index: 5;
 }
-.flip-card:hover{
+.card .back {
   background: radial-gradient(circle at bottom, #0c8dc4, darkblue);
-}
-
-@keyframes flip{
-  0%{
-    transform: rotateY(0deg);
-  }
-  50%{
-    transform: rotateY(90deg);
-    background: radial-gradient(circle at bottom, #0c8dc4, darkblue);
-  }
-  100%{
-    transform: rotateY(180deg);
-    background: radial-gradient(circle at bottom, #0c8dc4, darkblue);
-  }
+  text-align: center;
+  transform: rotateY(180deg);
 }
