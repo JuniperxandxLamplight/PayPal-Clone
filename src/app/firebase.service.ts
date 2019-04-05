@@ -6,7 +6,7 @@ export class FirebaseService {
   navs: FirebaseListObservable<any[]>;
 
   constructor(private database: AngularFireDatabase) {
-    this.navs = database.list('navigation');
+    this.navs = database.list('pp-clone0610');
   }
 
   getNavs(){

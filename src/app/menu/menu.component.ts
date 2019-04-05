@@ -16,13 +16,11 @@ export class MenuComponent implements OnInit {
 
   ngOnInit() {
     this.navs = this.database.getNavs();
-    this.personal = this.database.getMenu('personal');
-    console.log(this.personal);
   }
 
-  // loadPersonal(navs){
-  //   this.menu = navs.personal;
-  //   console.log(navs);
-  // }
+  loadPersonal(navs){
+    this.personal = navs;
+    console.log(navs);
+  }
 
 }
