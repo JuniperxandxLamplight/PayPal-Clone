@@ -13,4 +13,8 @@ export class FirebaseService {
     return this.navs;
   }
 
+  getMenu(nav){
+    return this.database.list('Navigation/' + nav)
+  }
+
 }

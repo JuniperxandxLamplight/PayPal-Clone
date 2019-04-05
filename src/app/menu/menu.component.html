@@ -12,10 +12,13 @@
     <p class="btn">Log In</p>
     <p class="btn">Sign Up</p>
   </div>
-  <div *ngIf='personalDropdown'>
-    <p>personal dropdown</p>
-  </div>
-  <div *ngIf='businessDropdown'>
-    <p>business dropdown</p>
-  </div>
 </nav>
+<div *ngIf='personalDropdown'>
+  <div *ngFor='let item of personal | async'>
+    <p class="nav1">{{item.title}}</p>
+    <p class="nav2">{{item.tagline}}</p>
+  </div>
+</div>
+<div *ngIf='businessDropdown'>
+  <p>business dropdown</p>
+</div>
