@@ -1,4 +1,4 @@
-{"navigation": [{
+{"navigation": {
   "personal": [{
     "title": "What is PayPal?",
     "tagline": "Learn how PayPal works in your everyday life"
@@ -18,7 +18,7 @@
     "title": "Shopping and More",
     "tagline": "Deals, gift cards and donations"
   }],
-  "business": [{
+  "business": {
     "main": [{
       "title": "All Solutions",
       "tagline": "Our business products and services"
@@ -47,5 +47,5 @@
     }, {
       "title": "Setup Center"
     }]
-  }]
-}]}
+  }
+}}
