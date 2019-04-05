@@ -13,13 +13,12 @@
     <p class="btn">Sign Up</p>
   </div>
 </nav>
-<div *ngIf='personalDropdown'>
-  <p>working</p>
+<div class="personalDropdown" *ngIf='personalDropdown'>
   <div *ngFor='let item of personal'>
     <p class="nav1">{{item.title}}</p>
     <p class="nav2">{{item.tagline}}</p>
   </div>
 </div>
-<div *ngIf='businessDropdown'>
+<div class="businessDropdown" *ngIf='businessDropdown'>
   <p>business dropdown</p>
 </div>
