@@ -1,0 +1,51 @@
+{"navigation": [{
+  "personal": [{
+    "title": "What is PayPal?",
+    "tagline": "Learn how PayPal works in your everyday life"
+  }, {
+    "title": "Check Out Securely Online",
+    "tagline": "Use your credit card or other funds"
+  }, {
+    "title": "PayPal Credit & Cards",
+    "tagline": "Our credit, debit, prepaid cards & PayPal credit"
+  }, {
+    "title": "PayPal App",
+    "tagline": "Tranfer money and track activity with our app"
+  }, {
+    "title": "PayPal Can Do That",
+    "tagline": "Discover ways to manage and move your money"
+  }, {
+    "title": "Shopping and More",
+    "tagline": "Deals, gift cards and donations"
+  }],
+  "business": [{
+    "main": [{
+      "title": "All Solutions",
+      "tagline": "Our business products and services"
+      }, {
+        "title": "Business Loans",
+        "tagline": "Fast and fair financing"
+      }, {
+        "title": "Payments",
+        "tagline": "Take payment online and in-person"
+      }, {
+        "title": "Credit for Your Customers",
+        "tagline": "Promote financing to help sell more"
+      }, {
+        "title": "Online Business Services",
+        "tagline": "Solutions to build, run, and expand"
+      }, {
+        "title": "Business in a Box",
+        "tagline": "Easy, all-in-one ecommerce tool"
+      }],
+    "right": [{
+      "title": "Help"
+    }, {
+      "title": "Fees"
+    }, {
+      "title": "Business Resource Center"
+    }, {
+      "title": "Setup Center"
+    }]
+  }]
+}]}
