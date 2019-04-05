@@ -3,18 +3,8 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 
 @Injectable()
 export class FirebaseService {
-  navs: FirebaseListObservable<any[]>;
 
-  constructor(private database: AngularFireDatabase) {
-    this.navs = database.list('pp-clone0610');
-  }
-
-  getNavs(){
-    return this.navs;
-  }
-
-  getMenu(nav){
-    return this.database.list('Navigation/' + nav)
+  constructor() {
   }
 
 }
