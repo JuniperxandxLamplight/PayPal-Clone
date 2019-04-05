@@ -6,6 +6,7 @@ nav{
   background-image: linear-gradient(rgba(0,0,0,.45), transparent);
   color: white;
   border-bottom: 1px solid rgba(255,255,255,0.5);
+  transition: background-color .2s;
   img{
     height: 45%;
     width: 28%;
@@ -35,13 +36,18 @@ nav{
     }
   }
 }
+.backing{
+  background-color: blue;
+}
 .personalDropdown{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 150px;
+  height: 0px;
   color: white;
   padding: 10px 15%;
+  background-color: blue;
+  transition: height 1s;
   .menu{
     height: 40px;
     padding: 10px;
@@ -49,4 +55,7 @@ nav{
   p{
     padding: 5px;
   }
+}
+.slide{
+  height: 140px;
 }
