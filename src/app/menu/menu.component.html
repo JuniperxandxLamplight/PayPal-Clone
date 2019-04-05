@@ -13,10 +13,12 @@
     <p class="btn">Sign Up</p>
   </div>
 </nav>
-<div class="personalDropdown"  [ngClass]="{'slide': personalDropdown}" *ngIf='personalDropdown'>
-  <div class="menu" *ngFor='let item of personal'>
-    <p class="nav1">{{item.title}}</p>
-    <p class="nav2">{{item.tagline}}</p>
+<div class="personalDropdown"  [ngClass]="{'slide': personalDropdown}" >
+  <div class="container" *ngIf='personalDropdown'>
+    <div class="menu" *ngFor='let item of personal'>
+      <p class="nav1">{{item.title}}</p>
+      <p class="nav2">{{item.tagline}}</p>
+    </div>
   </div>
 </div>
 <div class="businessDropdown" *ngIf='businessDropdown'>

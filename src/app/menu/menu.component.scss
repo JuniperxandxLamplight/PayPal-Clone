@@ -6,7 +6,7 @@ nav{
   background-image: linear-gradient(rgba(0,0,0,.45), transparent);
   color: white;
   border-bottom: 1px solid rgba(255,255,255,0.5);
-  transition: background-color .2s;
+  transition: background-color .1s;
   img{
     height: 45%;
     width: 28%;
@@ -40,17 +40,25 @@ nav{
   background-color: blue;
 }
 .personalDropdown{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   height: 0px;
   color: white;
-  padding: 10px 15%;
-  background-color: blue;
   transition: height 1s;
+  background-color: blue;
+  .container{
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    color: transparent;
+    animation-name: fade;
+    animation-duration: .3s;
+    animation-delay: .7s;
+    animation-fill-mode: forwards;
+  }
   .menu{
-    height: 40px;
-    padding: 10px;
   }
   p{
     padding: 5px;
@@ -58,4 +66,13 @@ nav{
 }
 .slide{
   height: 140px;
+}
+
+@keyframes fade{
+  from{
+    color: transparent;
+  }
+  to{
+    color: white;
+  }
 }
