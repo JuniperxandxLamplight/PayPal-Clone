@@ -9,17 +9,17 @@ nav{
     height: 45%;
     width: 28%;
   }
-  div{
+  .top{
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 33%;
   }
-  div:nth-of-type(2){
+  .top:nth-of-type(2){
     font-weight: bold;
     padding-top: 5px;
   }
-  div:last-of-type{
+  .top:last-of-type{
     justify-content: center;
     padding-top: 5px;
     p{

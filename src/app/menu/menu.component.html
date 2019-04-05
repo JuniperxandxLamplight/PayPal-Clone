@@ -1,15 +1,21 @@
 <nav>
-  <div>
+  <div class="top">
     <img src="../../assets/images/logo.png" alt="logo">
   </div>
-  <div>
-    <p>PERSONAL <i class="fas fa-chevron-down"></i></p>
-    <p>BUSINESS <i class="fas fa-chevron-down"></i></p>
+  <div class="top">
+    <p (click)='personalDropdown = !personalDropdown'>PERSONAL <i class="fas fa-chevron-down"></i></p>
+    <p (click)='businessDropdown = !businessDropdown'>BUSINESS <i class="fas fa-chevron-down"></i></p>
     <p>SEND</p>
     <p>REQUEST</p>
   </div>
-  <div>
+  <div class="top">
     <p class="btn">Log In</p>
     <p class="btn">Sign Up</p>
+  </div>
+  <div *ngIf='personalDropdown'>
+    <p>personal dropdown</p>
+  </div>
+  <div *ngIf='businessDropdown'>
+    <p>business dropdown</p>
   </div>
 </nav>
