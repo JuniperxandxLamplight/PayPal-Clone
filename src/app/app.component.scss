@@ -1,10 +1,20 @@
 .top{
-  background-image: url('../assets/images/header.jpg');
-  background-position: center;
-  background-size: cover;
+  z-index: -10;
   min-height: 530px;
+  position: relative;
+  top: -75px;
+  img{
+    width: 100vw;
+    height: auto;
+  }
+  app-header{
+    position: relative;
+    top: -450px;
+  }
 }
 .main{
+  position: relative;
+  top: -450px;
   background-color: #f7f9fa;
   min-height: 530px;
 }
