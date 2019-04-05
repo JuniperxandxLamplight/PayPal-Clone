@@ -36,22 +36,25 @@ nav{
     }
   }
 }
+i{
+  transition: transform .5s;
+}
 .backing{
-  background-color: blue;
+  background-color: #3174e0;
 }
 .personalDropdown{
   height: 0px;
   color: white;
   transition: height 1s;
-  background-color: blue;
+  background-color: #3174e0;
   .container{
     height: 140px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
-    width: 100vw;
+    width: 74%;
+    padding: 0 13%;
     color: transparent;
     animation-name: fade;
     animation-duration: .3s;
@@ -59,13 +62,46 @@ nav{
     animation-fill-mode: forwards;
   }
   .menu{
+    margin: 10px 0;
   }
   p{
     padding: 5px;
   }
 }
+.businessDropdown{
+  height: 0px;
+  color: white;
+  transition: height 1s;
+  background-color: #3174e0;
+  .container{
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 74%;
+    padding: 0 13%;
+    color: transparent;
+    animation-name: fade;
+    animation-duration: .3s;
+    animation-delay: .7s;
+    animation-fill-mode: forwards;
+  }
+  .menu{
+    margin: 10px 0;
+  }
+  p{
+    padding: 5px;
+  }
+}
+.nav2{
+  font-size: .85rem;
+}
 .slide{
   height: 140px;
+}
+.flip{
+  transform: rotate(-180deg);
 }
 
 @keyframes fade{

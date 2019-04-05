@@ -1,10 +1,10 @@
-<nav [ngClass]="{'backing': personalDropdown}"v>
+<nav [ngClass]="{'backing': personalDropdown || businessDropdown}">
   <div class="top">
     <img src="../../assets/images/logo.png" alt="logo">
   </div>
   <div class="top">
-    <p (click)='personalDropdown = !personalDropdown'>PERSONAL <i class="fas fa-chevron-down"></i></p>
-    <p (click)='businessDropdown = !businessDropdown'>BUSINESS <i class="fas fa-chevron-down"></i></p>
+    <p (click)='personalDropdown = !personalDropdown; businessDropdown = false'>PERSONAL <i [ngClass]="{'flip': personalDropdown}" class="fas fa-chevron-down"></i></p>
+    <p (click)='businessDropdown = !businessDropdown; personalDropdown = false'>BUSINESS <i [ngClass]="{'flip': businessDropdown}" class="fas fa-chevron-down"></i></p>
     <p>SEND</p>
     <p>REQUEST</p>
   </div>
@@ -21,6 +21,11 @@
     </div>
   </div>
 </div>
-<div class="businessDropdown" *ngIf='businessDropdown'>
-  <p>business dropdown</p>
+<div class="businessDropdown" [ngClass]="{'slide': businessDropdown}">
+  <div class="container" *ngIf='businessDropdown'>
+    <div class="menu" *ngFor='let item of business'>
+      <p class="nav1">{{item.title}}</p>
+      <p class="nav2">{{item.tagline}}</p>
+    </div>
+  </div>
 </div>
